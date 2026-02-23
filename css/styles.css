@@ -153,17 +153,17 @@ color: #444;
     background-position: center right;
     background-repeat: no-repeat;*/
 
-    background: url('../images/hero.jpg')  no-repeat center right/100%;
+    background: url('../images/hero.jpg')  no-repeat center right/cover;
+
 }
 
 
 /* ===== Numéro 4b ===== */
 .hero .wrapper {
     display: flex;
-    align-items: baseline;
     flex-direction: column ;
     min-height: 650px;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 
 /* ===== Numéro 4c ===== */
@@ -236,8 +236,8 @@ color: #444;
 /* ===== Numéro 5d ===== */
 .athletes-photos {
     display: grid;
-    grid-template-columns: repeat ( 3, 1fr);
     gap: 30px;
+    grid-template-columns: repeat(3, 1fr);
 }
 
 /* ===== Numéro 5e ===== */
@@ -254,11 +254,13 @@ grid-column: span 2;
 
 /* ===== Numéro 6a ===== */
 footer {
-
+background: #000;
 }
 
 footer .wrapper {
-
+display: flex;
+justify-content: flex-end;
+padding: 30px 0;
 }
 
 /* ===== Numéro 6b ===== */
@@ -273,21 +275,32 @@ footer .wrapper {
     padding-right: 0;
     padding-top: 0;
     padding-bottom: 0;*/
+
     margin: 0;
     padding: 0;
+    list-style: none;
+    display: flex;
+    gap: 10px;
 }
 
 
 
 /* ===== Numéro 6c ===== */
 
-footer .wrapper .menu-social a {
-
+footer .menu-social a {
+text-decoration: none;
+color: #fff;
+background: #F2545B;
+border-radius: 100%;
+height: 40px;
+width: 40px;
+display: flex;
+align-items: center;
+justify-content: center;
 }
 
 /* ===== Numéro 6d ===== */
-/*
+
 .menu-social a:hover {
     background: gray;
 }
-*/

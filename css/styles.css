@@ -54,6 +54,16 @@ justify-content: space-between;
 
 }
 
+header {
+    /*padding-top: 20px;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 20px;*/
+
+
+    padding: 20px 0;
+}
+
 /* ===== Numéro 3b ===== */
 .logo {
 display: flex;
@@ -107,6 +117,8 @@ color: #444;
     font: normal normal bold 0.875/100% 'PT Sans', sans-serif;
     color: #000;
     padding: 5px 10px;
+
+    border: 2px solid transparent;
 }
 
 
@@ -132,39 +144,38 @@ color: #444;
 
 /* ===== Numéro 3f ===== */
 
-header {
-    /*padding-top: 20px;
-    padding-left: 0;
-    padding-right: 0;
-    padding-bottom: 20px;*/
-
-    padding: 20px 0;
-}
-
+/* Nothing to see here */
 
 /* ===== Numéro 4a ===== */
-/*
+
 .hero {
-    background-image: url('../images/hero.jpg');
+    /*background-image: url('../images/hero.jpg');
     background-position: center right;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat;*/
+
+    background: url('../images/hero.jpg')  no-repeat center right/100%;
 }
-*/
+
 
 /* ===== Numéro 4b ===== */
 .hero .wrapper {
-
+    display: flex;
+    align-items: baseline;
+    flex-direction: column ;
+    min-height: 650px;
+    justify-content: space-evenly;
 }
 
 /* ===== Numéro 4c ===== */
 .hero .contenu {
-
+    max-width: 50%;
+    color: #fff;
 }
 
 /* ===== Numéro 4d ===== */
-/*
+
 .hero h1 {
-    font-weight: 100;
+    /*font-weight: 100;
     font-size: 100px;
     line-height: 100%;
 
@@ -173,57 +184,71 @@ header {
     margin-bottom: 20px;
     margin-left: 0;
     margin-right: 0;
+    color: #F2545B;*/
+
+    font: normal normal 100 6.25rem/100% 'Nunito', sans-serif;
+    margin: 0 0 20px;
     color: #F2545B;
 }
-*/
 
 /* ===== Numéro 5a ===== */
-/*
+
+.athletes {
+    /*padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left: 0;
+    padding-right: 0;*/
+
+    padding: 100px 0;
+}
+
 .athletes h2 {
-    font-family: Nunito, sans-serif;
+    /*font-family: Nunito, sans-serif;
     font-weight: bold;
     font-size: 50px;
     margin-top: 0;
     margin-bottom: 50px;
     margin-left: 0;
-    margin-right: 0;
+    margin-right: 0;*/
+
+    font: normal normal bold ;
+    margin: 0 0 50px 3.125rem/100% 'Nunito', sans-serif;
+    letter-spacing: 0.05em;
 }
-*/
+
 
 /* ===== Numéro 5b ===== */
-/*
+
 .athletes p {
-    margin-right: 0;
+    /*margin-right: 0;
     margin-bottom: 50px;
     margin-top: 0;
-    margin-left: 0;
+    margin-left: 0;*/
+
+    margin: 0 0 50px;
 }
-*/
+
 
 /* ===== Numéro 5c ===== */
-/*
-.athletes {
-    padding-top: 100px;
-    padding-bottom: 100px;
-    padding-left: 0;
-    padding-right: 0;
-}
-*/
+
 
 
 /* ===== Numéro 5d ===== */
 .athletes-photos {
-
+    display: grid;
+    grid-template-columns: repeat ( 3, 1fr);
+    gap: 30px;
 }
 
 /* ===== Numéro 5e ===== */
 .athletes-photos img {
-
+    max-width: 100%;
 }
 
 /* ===== Numéro 5f ===== */
 .athlete1 {
-
+grid-row: span 2;
+grid-column: span 2;
 }
 
 
@@ -237,9 +262,9 @@ footer .wrapper {
 }
 
 /* ===== Numéro 6b ===== */
-/*
+
 .menu-social {
-    margin-top: 0;
+    /*margin-top: 0;
     margin-left: 0;
     margin-bottom: 0;
     margin-right: 0;
@@ -247,9 +272,11 @@ footer .wrapper {
     padding-left: 0;
     padding-right: 0;
     padding-top: 0;
-    padding-bottom: 0;
+    padding-bottom: 0;*/
+    margin: 0;
+    padding: 0;
 }
-*/
+
 
 
 /* ===== Numéro 6c ===== */
